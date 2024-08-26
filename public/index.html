@@ -2335,165 +2335,23 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- EmailJS -->
     <script>
-      (function () {
-        emailjs.init("QVuzXQvKVU5K8J2c3");
-      })();
-
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          emailjs.sendForm("service_2h16h0s", "template_yraohzx", this).then(
-            function (result) {
-              console.log(result.text);
-              alert("Cảm ơn bạn đã liên hệ, chúng tôi sẽ phản hồi sớm nhất.");
-            },
-            function (error) {
-              console.log(error.text);
-              alert(
-                "Đã có lỗi xảy ra, vui lòng thử lại hoặc liên hệ số điện thoại cuối trang."
-              );
-            }
-          );
-        });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     </script>
     <!-- Header -->
     <script>
-      let lastScrollPosition = 0;
-      document.addEventListener("DOMContentLoaded", function () {
-        // Ensure the DOM is fully loaded
-        const header = document.getElementById("header");
-
-        if (header) {
-          // Check if the header element exists
-          window.addEventListener("scroll", function () {
-            const currentScrollPosition = window.pageYOffset;
-
-            if (currentScrollPosition > lastScrollPosition) {
-              // Scroll down, hide the header
-              header.style.transform = "translateY(-100%)";
-            } else {
-              // Scroll up, show the header
-              header.style.transform = "translateY(0)";
-            }
-
-            lastScrollPosition = currentScrollPosition;
-          });
-        } else {
-          console.error('The element with ID "header" was not found.');
-        }
-
-        // New code for progress circles
-        const circles = document.querySelectorAll(".progress-circle");
-        circles.forEach((circle) => {
-          const progress = circle.dataset.progress;
-          const progressCircle = circle.querySelector(".progress");
-          const circumference = 2 * Math.PI * 54;
-          const offset = circumference - (progress / 100) * circumference;
-          progressCircle.style.strokeDashoffset = offset;
-        });
-      });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     </script>
     <!-- Feedback -->
     <script>
-      const feedbacks = [
-        {
-          text: "Tôi đánh giá cao về sự hỗ trợ của VNNET, từ khi áp dụng Seeding lượng khách hàng tăng đáng kể.",
-          name: "Trần Ngọc Quỳnh Anh",
-          title: "Trưởng phòng kinh doanh - Jera",
-          img: "images/fb-jera.png",
-        },
-        {
-          text: "Dịch vụ của VNNET rất tuyệt vời, tôi rất hài lòng!",
-          name: "Nguyễn Khánh Huyền",
-          title: "CEO - Huyền Beauty",
-          img: "images/fb-huyenbeauty.png",
-        },
-        {
-          text: "Dịch vụ của VNNET rất tuyệt vời, tôi rất hài lòng!",
-          name: "Trịnh Quốc  Khánh",
-          title: "CTO - QK Technology",
-          img: "images/fb-tech.png",
-        },
-      ];
-
-      let currentFeedback = 0;
-
-      document.querySelector(".prev-btn").addEventListener("click", () => {
-        currentFeedback =
-          currentFeedback > 0 ? currentFeedback - 1 : feedbacks.length - 1;
-        updateFeedback();
-      });
-
-      document.querySelector(".next-btn").addEventListener("click", () => {
-        currentFeedback =
-          currentFeedback < feedbacks.length - 1 ? currentFeedback + 1 : 0;
-        updateFeedback();
-      });
-
-      function updateFeedback() {
-        const feedback = feedbacks[currentFeedback];
-        document.querySelector(".content-feedback img").src = feedback.img;
-        document.querySelector(".content-feedback p").textContent =
-          feedback.text;
-        document.querySelector(".content-feedback h4").textContent =
-          feedback.name;
-        document.querySelector(".content-feedback span").textContent =
-          feedback.title;
-      }
-
-      setInterval(() => {
-        currentFeedback =
-          currentFeedback < feedbacks.length - 1 ? currentFeedback + 1 : 0;
-        updateFeedback();
-      }, 6000);
-
-      updateFeedback();
-      //End Feedback//
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     </script>
     <!-- Rolling effect -->
     <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          target.scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     </script>
     <!--menu mobile -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileToggle = document.querySelector(".mobile-toggle");
-        const innerMenu2 = document.querySelector(".inner-menu2");
-        const barsIcon = mobileToggle.querySelector(".fa-bars");
-        const xmarkIcon = mobileToggle.querySelector(".fa-xmark");
-
-        // Initially hide the menu and xmark icon
-        innerMenu2.style.display = "none";
-        xmarkIcon.style.display = "none";
-
-        mobileToggle.addEventListener("click", function () {
-          if (innerMenu2.style.display === "flex") {
-            innerMenu2.style.display = "none"; // Hide menu
-            barsIcon.style.display = "block"; // Show bars icon
-            xmarkIcon.style.display = "none"; // Hide xmark icon
-          } else {
-            innerMenu2.style.display = "flex"; // Show menu
-            barsIcon.style.display = "none"; // Hide bars icon
-            xmarkIcon.style.display = "block"; // Show xmark icon
-          }
-        });
-
-        // Close menu when clicking inside inner-menu2
-        innerMenu2.addEventListener("click", function () {
-          innerMenu2.style.display = "none"; // Hide menu
-          barsIcon.style.display = "block"; // Show bars icon
-          xmarkIcon.style.display = "none"; // Hide xmark icon
-        });
-      });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     </script>
   </body>
 </html>
