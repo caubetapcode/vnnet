@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>VNNET</title>
+    <style>
+      html {
+        line-height: 1.15; /* 1 */
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        display: block;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      hr {
+        box-sizing: content-box; /* 1 */
+        height: 0; /* 1 */
+        overflow: visible; /* 2 */
+      }
+
+      pre {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      a {
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      abbr[title] {
+        border-bottom: none; /* 1 */
+        text-decoration: underline; /* 2 */
+        text-decoration: underline dotted; /* 2 */
+      }
+
+      b,
+      strong {
+        font-weight: bolder;
+      }
+
+      code,
+      kbd,
+      samp {
+        font-family: monospace, monospace; /* 1 */
+        font-size: 1em; /* 2 */
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      /* Embedded content
+     ========================================================================== */
+
+      /**
+   * Remove the border on images inside links in IE 10.
+   */
+
+      img {
+        border-style: none;
+      }
+
+      /* Forms
+     ========================================================================== */
+
+      /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit; /* 1 */
+        font-size: 100%; /* 1 */
+        line-height: 1.15; /* 1 */
+        margin: 0; /* 2 */
+      }
+
+      /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+      button,
+      input {
+        /* 1 */
+        overflow: visible;
+      }
+
+      /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+      button,
+      select {
+        /* 1 */
+        text-transform: none;
+      }
+
+      /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        appearance: button;
+      }
+
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      button:-moz-focusring,
+      [type="button"]:-moz-focusring,
+      [type="reset"]:-moz-focusring,
+      [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+
+      legend {
+        box-sizing: border-box; /* 1 */
+        color: inherit; /* 2 */
+        display: table; /* 1 */
+        max-width: 100%; /* 1 */
+        padding: 0; /* 3 */
+        white-space: normal; /* 1 */
+      }
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      textarea {
+        overflow: auto;
+      }
+
+      [type="checkbox"],
+      [type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+      }
+
+      [type="number"]::-webkit-inner-spin-button,
+      [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      [type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        appearance: textfield; /* Add the standard property 'appearance' */
+        outline-offset: -2px; /* 2 */
+      }
+
+      [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button; /* 1 */
+        font: inherit; /* 2 */
+      }
+      details {
+        display: block;
+      }
+
+      summary {
+        display: list-item;
+      }
+
+      template {
+        display: none;
+      }
+
+      [hidden] {
+        display: none;
+      }
+    </style>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .clear-flex {
+        clear: both;
+      }
+
+      .consult-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        width: fit-content;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .consult-button:hover {
+        background-color: #0056b3;
+      }
+
+      .page {
+        width: 100%;
+      }
+
+      /* Header */
+      .header {
+        background-color: #fff;
+        padding: 10px 5px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.5s ease;
+      }
+
+      .inner-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Logo Menu */
+      .inner-logo {
+        margin-left: 10px;
+      }
+
+      .inner-logo a {
+        display: flex;
+        align-items: center;
+      }
+
+      .inner-logo img {
+        height: 60px;
+        width: auto;
+        transition: transform 0.3s ease;
+      }
+
+      .inner-logo span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2980b9;
+        margin-left: 10px;
+      }
+
+      .inner-logo:hover {
+        transform: scale(1.1);
+      }
+
+      /* Menu */
+      .inner-menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .inner-menu ul {
+        display: flex;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .inner-menu2 {
+        display: none; /* Ẩn menu thứ hai theo mặc định */
+        top: 60px; /* Điều chỉnh dựa trên chiều cao header */
+        height: max-content;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      ul li {
+        animation: slideIn 0.5s ease forwards;
+      }
+
+      .inner-menu ul li:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .inner-menu ul li:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .inner-menu ul li:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .inner-menu ul li:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        transition: color 0.3s ease;
+        padding: 15px 0;
+      }
+
+      ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #007bff;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul li a:hover {
+        color: #007bff;
+      }
+
+      ul li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      .inner-end {
+        display: flex;
+        align-items: center;
+      }
+
+      .inner-end a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        padding: 15px 20px;
+        border-radius: 25px;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .inner-end a:hover {
+        background-color: #0056b3;
+      }
+
+      .mobile-toggle {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .inner-menu {
+          display: none; /* Ẩn menu chính trên di động */
+        }
+
+        .inner-end {
+          justify-content: flex-end;
+          margin-right: 40px;
+        }
+
+        .mobile-toggle {
+          display: flex;
+        }
+
+        .fa-xmark {
+          display: none;
+        }
+
+        .inner-menu2 {
+          width: 90%;
+          margin-top: 5px;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+          padding: 10px;
+        }
+
+        .inner-menu2 ul {
+          flex-direction: column;
+          padding: 0;
+        }
+
+        .inner-menu2 ul li {
+          font-size: 20px;
+          margin: 10px 0;
+          font-weight: 700;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* Part 1 */
+      .part1 {
+        background-image: url("../public/images/part1-bg2-banner-h8.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+      }
+
+      /* Content Part 1 */
+      .content-part1 {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        background-image: url("../public/images/part1-bg1-banner.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 120px 0 100px 0;
+      }
+
+      .image-part1 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-part1 img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -50px;
+      }
+
+      .content-part1-1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: top center;
+        color: #363535;
+        margin-top: -30px;
+      }
+
+      .content-part1-1 h6 {
+        color: #007bff;
+        font-size: 30px;
+        margin-bottom: -30px;
+        text-transform: uppercase;
+      }
+
+      .content-part1-1 h1 {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: -15px;
+        text-transform: uppercase;
+      }
+
+      .content-part1-1 p {
+        color: rgb(75, 73, 73);
+        font-size: 24px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .content-part1-1 .baogia {
+        background-color: #ff6a28;
+      }
+
+      .content-part1-1 .consult-button a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .content-part1-1 .baogia:hover {
+        background-color: #fa310d;
+      }
+      /*End Content Part 1 */
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .content-part1 {
+          flex-direction: column;
+          padding: 120px 0 40px 0;
+          background-image: none;
+        }
+
+        .content-part1-1 {
+          padding: 0 10px;
+          text-align: center;
+          align-items: center;
+        }
+
+        .content-part1-1 p {
+          margin-right: 0;
+        }
+
+        .image-part1 img {
+          max-width: 99.5%;
+        }
+      }
+      /* End Responsive Styles */
+      /* End Part 1 */
+      /* Part 2 */
+      .part2 {
+        width: 100%;
+        background-color: #f0f6ff;
+        padding: 100px 0;
+      }
+      /* Section Part 2 */
+      .section-part2 {
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Đặt chiều rộng là 100% */
+        box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng tổng */
+      }
+
+      .container-section-part2 {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between; /* Điều chỉnh phân bố các content-box */
+      }
+
+      .content-box {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center; /* Cố định chiều rộng */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s;
+        flex: 1 1 1 1; /* Cho phép điều chỉnh kích thước tự động */
+        position: relative; /* Thêm vào */
+        margin: 25px;
+      }
+
+      .content-box:hover {
+        transform: translateY(-10px);
+        background: linear-gradient(135deg, #4e8cff, #00d2ff);
+        color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .inner-icon {
+        background: linear-gradient(135deg, #4e8cff, #00d2ff);
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content-box:hover .inner-icon {
+        transform: scale(1.2);
+        background: #fff;
+        color: #4e8cff;
+      }
+      .content-content-box h5 {
+        color: #070707;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .content-content-box p {
+        color: #424242;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .content-box:hover .content-content-box h5,
+      .content-box:hover .content-content-box p {
+        color: #fff;
+      }
+
+      .content-box:hover .bignumber {
+        color: rgba(8, 8, 8, 0.1);
+      }
+
+      .bignumber {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        font-size: 72px;
+        color: rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        transition: transform 0.3s, opacity 0.3s; /* Thêm hiệu ứng chuyển đổi */
+        opacity: 1; /* Mặc định là ẩn */
+      }
+
+      .content-box:hover .bignumber {
+        transform: translateY(-10px); /* Di chuyển lên khi hover */
+        opacity: 1; /* Hiển thị số */
+      }
+
+      /* Điều chỉnh kích thước khung hình trên màn hình nhỏ hơn */
+      @media (max-width: 768px) {
+        .container-section-part2 {
+          flex-direction: column; /* Chuyển sang hiển thị dọc */
+        }
+
+        .content-box {
+          width: auto; /* Điều chỉnh chiều rộng */
+          /* Khoảng cách giữa các content-box */
+        }
+      }
+
+      /* End Section Part 2 */
+      /* End Part 2 */
+
+      /*Part 3 */
+      .part3 {
+        background-color: #ffffff;
+      }
+
+      .container-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content-box-heading {
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #8d8b8b;
+      }
+
+      .content-box-heading h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+      }
+
+      .content-box-heading p {
+        font-size: 1rem;
+        color: #666;
+        padding: 0 50px;
+      }
+
+      .container-part3 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width: 100vw;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+
+      .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(150px, 1fr)
+        ); /* Responsive columns */
+        gap: 40px;
+        max-width: 1600px;
+        width: 100%;
+      }
+
+      .logo-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .logo-item img {
+        max-width: 100%; /* Ensure the image fits within the container */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease;
+      }
+
+      .logo-item:hover img {
+        transform: scale(1.1); /* Enlarge image on hover */
+      }
+
+      /* Card */
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 98.5%;
+        padding: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        position: relative;
+        flex: 1;
+        min-width: 200px;
+        padding: 60px 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-size: 200% 200%; /* Cho hiệu ứng gradient động */
+        animation: gradient 15s infinite ease-in-out; /* Animation gradient */
+      }
+
+      .card:hover {
+        transform: translateY(-10px) scale(1.05); /* Thêm scale */
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25); /* Tăng độ mờ */
+      }
+
+      .card h3 {
+        margin-top: 0;
+        font-size: 2em;
+        font-weight: 800;
+        color: #fff;
+      }
+
+      .card p {
+        margin: 10px 0 35px 0;
+        font-size: 1em;
+        color: #fff;
+      }
+      .cover-button {
+        position: absolute;
+        bottom: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: end;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: #fff;
+        color: #007bff;
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .button svg {
+        margin-left: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .button:hover svg {
+        transform: translateX(5px);
+      }
+
+      .blue {
+        background: linear-gradient(45deg, #162664, #2847bf);
+      }
+
+      .green {
+        background: linear-gradient(45deg, rgb(139, 126, 3), #ffe600);
+      }
+
+      .black {
+        background: linear-gradient(45deg, #fe2c55, #000000, #c2344c);
+      }
+
+      .red {
+        background: linear-gradient(45deg, #90000a, #fe1c28);
+      }
+
+      .purple {
+        background: linear-gradient(45deg, #fb9d36, #e6247a);
+      }
+
+      .cyan {
+        background: linear-gradient(45deg, #00acc1, #26c6da);
+      }
+
+      .orange {
+        background: linear-gradient(45deg, #ff6a0f, #ff6a0f);
+      }
+
+      .traffic {
+        background: linear-gradient(90deg, #03750d, #14a707);
+      }
+
+      /* Part4 */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin: 100px 0 0;
+      }
+
+      .progress-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        z-index: 1;
+      }
+
+      .progress-circle {
+        position: relative;
+        width: 240px;
+        height: 240px;
+      }
+
+      .progress-circle svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+      }
+
+      .progress-circle circle {
+        fill: none;
+        stroke-width: 10;
+        stroke-linecap: round;
+      }
+
+      .progress-circle .bg {
+        stroke: #f0f0f0;
+      }
+
+      .progress-circle .progress {
+        stroke: url(#gradient);
+        stroke-dasharray: 339.292; /* 2 * π * (54 - 4) */
+        stroke-dashoffset: 339.292;
+        transition: stroke-dashoffset 1s ease-in-out;
+      }
+
+      .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        padding: 40px 25px;
+        border-radius: 50%;
+        border: solid 20px #e2f0f3;
+        z-index: 3;
+      }
+
+      .progress-item p {
+        margin-top: 15px;
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        font-weight: 900;
+      }
+
+      /*contact-form */
+      .background-contact-form {
+        background: linear-gradient(to right, #0066ff, #00ccff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 50px 0;
+        border-radius: 40px;
+      }
+
+      .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url("../public/images/rocket2-service2-1.png");
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        border-radius: 10px;
+        width: 100%;
+        margin: auto;
+        transition: background-size 0.3s ease-in-out;
+      }
+
+      .contact-form h2 {
+        color: #fff;
+        margin-bottom: 20px;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .input-field {
+        width: 50%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .input-field:focus {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+
+      .submit-button {
+        padding: 10px 20px;
+        background-color: #ff6a28;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .submit-button:hover {
+        background-color: #fa310d;
+      }
+
+      .success-message {
+        text-align: center;
+        color: rgb(13, 0, 128);
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .background-contact-form {
+          width: 90%;
+        }
+
+        .contact-form {
+          background-size: contain;
+        }
+
+        .input-field {
+          width: 80%;
+        }
+      }
+      /* Part 5 */
+      .part5 {
+        width: 90%;
+      }
+
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: right;
+      }
+      .content-container {
+        flex: 1;
+        padding: 20px;
+        justify-content: left;
+      }
+      .content-container h1 {
+        font-size: 45px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .content-container p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .progress-container {
+        margin-bottom: 20px;
+      }
+      .progress-label {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      .progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        height: 20px;
+      }
+      .progress-bar span {
+        display: block;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        position: relative;
+      }
+      .progress-bar span::after {
+        content: attr(data-progress);
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .image-container,
+        .content-container {
+          flex: none;
+          width: 100%;
+        }
+        .content-container {
+          padding: 10px;
+        }
+        .content-container h1 {
+          font-size: 28px;
+        }
+        .content-container p {
+          font-size: 14px;
+        }
+      }
+
+      /* End Part 5 */
+      /* Feedback */
+      .feedback {
+        background: #fff;
+        padding: 0 100px 100px 100px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .container-feedback {
+        padding: 100px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+      }
+
+      .header-feedback {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .header-feedback h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #8d8b8b;
+      }
+      .header-feedback h1 {
+        font-size: 48px;
+        margin: 10px 0;
+      }
+      .feedback-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .feedback-navigation button {
+        background-color: #1e90ff;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .feedback-navigation button:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+      }
+      .container-content-feedback {
+        background: linear-gradient(135deg, #1e90ff, #87cefa);
+        padding: 40px;
+        width: 100%;
+        max-width: 1400px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .content-box-feedback {
+        max-width: 800px;
+        text-align: center;
+      }
+      .content-feedback {
+        padding: 40px;
+        background: #fff;
+        border-radius: 20px;
+        color: #000000;
+      }
+      .content-feedback img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+      }
+      .content-feedback p {
+        font-size: 26px;
+        margin: 20px 0;
+      }
+      .content-feedback h4 {
+        font-size: 30px;
+        margin: 40px 0 10px 0;
+      }
+      .content-feedback span {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .feedback {
+          padding: 0 20px 100px 20px;
+        }
+        .container-feedback {
+          padding: 20px;
+        }
+        .header-feedback h1 {
+          font-size: 28px;
+        }
+
+        .container-content-feedback {
+          padding: 20px;
+        }
+        .content-box-feedback {
+          padding: 20px;
+        }
+        .content-feedback img {
+          width: 100px;
+          height: 100px;
+        }
+        .content-feedback p {
+          font-size: 16px;
+        }
+        .content-feedback h4 {
+          font-size: 24px;
+        }
+        .content-feedback span {
+          font-size: 16px;
+        }
+      }
+
+      /* Footer */
+      .footer {
+        background: linear-gradient(90deg, #003399, #0044cc, #3366ff);
+        color: white;
+        padding: 3rem 5%;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section {
+        flex: 1;
+        margin-right: 2rem;
+      }
+
+      .footer-section:last-child {
+        margin-right: 0;
+      }
+
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .footer-logo img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      .footer-logo h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #6fb1fc;
+      }
+
+      .footer h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #6fb1fc;
+      }
+
+      .footer p,
+      .footer ul {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+      }
+
+      .footer ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: white;
+      }
+
+      .social-icons a:nth-child(1) {
+        background-color: #3b5998;
+      }
+
+      .social-icons a:nth-child(2) {
+        background: linear-gradient(135deg, #671222, #fe3259);
+      }
+
+      .social-icons i {
+        font-size: 1.5rem; /* Adjust this value to make icons larger or smaller */
+        color: #fff;
+      }
+
+      .copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        opacity: 0.8;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+        }
+
+        .footer-section {
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header-->
+      <header class="header" id="header">
+        <div class="inner-wrap">
+          <div class="inner-logo">
+            <a href=" ">
+              <img src="favicon.ico" alt="VNNET Logo" />
+              <span>VNNET</span>
+            </a>
+          </div>
+          <nav class="inner-menu">
+            <ul>
+              <li><a href=" ">Trang chủ</a></li>
+              <li><a href="#gioithieu">Giới thiệu</a></li>
+              <li><a href="#dichvu">Dịch vụ</a></li>
+              <li><a href="#contact-form">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <div class="inner-end">
+            <a href="#contact-form">Tư vấn</a>
+            <div class="mobile-toggle">
+              <i class="fa fa-bars"></i>
+              <i class="fa-solid fa-xmark" style="display: none"></i>
+            </div>
+          </div>
+        </div>
+        <nav class="inner-menu2">
+          <ul>
+            <li><a href=" ">Trang chủ</a></li>
+            <li><a href="#gioithieu">Giới thiệu</a></li>
+            <li><a href="#dichvu">Dịch vụ</a></li>
+            <li><a href="#contact-form">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <!-- Content Part 1-->
+      <div class="part1">
+        <div class="content-part1">
+          <div class="image-part1">
+            <img src="images/imagepart1.gif" alt="Image Part1" />
+          </div>
+          <div class="content-part1-1">
+            <h6>VNNET</h6>
+            <h1><strong>SOCIAL SEEDING</strong></h1>
+            <p>
+              Giải pháp giúp doanh nghiệp xây dựng thương hiệu & tăng doanh thu
+              hiệu quả trên Social
+            </p>
+            <button class="consult-button">
+              <a href="#contact-form">
+                <span
+                  >Tư vấn ngay <i class="fa-solid fa-hand-holding-heart"></i
+                ></span>
+              </a>
+            </button>
+            <button class="consult-button baogia">
+              <a
+                href="https://drive.google.com/file/d/1Mnsa2kEmYTd1jzhbIhXTltvdf6Nwe7Cl/view?usp=sharing"
+                target="_blank"
+              >
+                <span
+                  >Bảng báo giá tổng
+                  <i class="fa-solid fa-hand-holding-dollar"></i
+                ></span>
+              </a>
+            </button>
+          </div>
+          <div class="clear-flex"></div>
+        </div>
+      </div>
+      <!-- End Content Part 1-->
+    </div>
+
+    <!-- Part 2 -->
+    <div class="part2" id="gioithieu">
+      <section class="section-part2">
+        <div class="container-section-part2">
+          <div class="content-section-part2">
+            <div class="content-box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <div class="content-content-box">
+                <h5>TẬN TÂM</h5>
+                <p>
+                  VNNet với phương châm luôn hỗ trợ tối đa hướng về mục tiêu
+                  chung, minh bạch - trung thực.
+                </p>
+              </div>
+              <span class="bignumber">01</span>
+            </div>
+          </div>
+          <div class="content-section-part2">
+            <div class="content-box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="content-content-box">
+                <h5>HIỆU QUẢ</h5>
+                <p>
+                  VNNet hoạt động và phát triển với mục tiêu là mang lại "hiệu
+                  quả" cho khách hàng
+                </p>
+              </div>
+              <span class="bignumber">02</span>
+            </div>
+          </div>
+          <div class="content-section-part2">
+            <div class="content-box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <div class="content-content-box">
+                <h5>ĐỒNG HÀNH</h5>
+                <p>
+                  VNNet hướng đến mục tiêu đồng hành cùng doanh nghiệp chứ không
+                  phải làm 1 lần
+                </p>
+              </div>
+              <span class="bignumber">03</span>
+            </div>
+          </div>
+          <div class="content-section-part2">
+            <div class="content-box">
+              <div class="inner-icon">
+                <i class="fa-solid fa-ranking-star"></i>
+              </div>
+              <div class="content-content-box">
+                <h5>CHUYÊN NGHIỆP</h5>
+                <p>
+                  Quy trình làm việc chuyên nghiệp, theo dõi tiến độ realtime,
+                  báo cáo chi tiết
+                </p>
+              </div>
+              <span class="bignumber">04</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Part 2 -->
+    <!-- Part 3 -->
+    <div class="part3">
+      <div class="content-box-heading">
+        <h5>
+          <i class="fa-solid fa-circle"></i> VNNET
+          <i class="fa-solid fa-circle"></i>
+        </h5>
+        <h2>BRAND ĐỒNG HÀNH</h2>
+      </div>
+      <div class="container-part3">
+        <div class="logo-grid">
+          <div class="logo-item">
+            <img src="images/vinfast-logo.png" alt="VinFast" />
+          </div>
+          <div class="logo-item">
+            <img src="images/gostudio.png" alt="GoStudio" />
+          </div>
+          <div class="logo-item">
+            <img src="images/Logo_Viettel.png" alt="Viettel" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-vnairlines.png" alt="Vietnam Airlines" />
+          </div>
+          <div class="logo-item">
+            <img src="images/LOreal_logo.png" alt="L'OREAL" />
+          </div>
+          <div class="logo-item"><img src="images/Logo_MB.png" alt="MB" /></div>
+          <div class="logo-item">
+            <img src="images/Huawei_Standard_logo.png" alt="HUAWEI" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-vitadairy.png" alt="VitaDairy" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-thammivien.png" alt="Bac Si Tinh" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-virbacpng.png" alt="Virbac" />
+          </div>
+          <div class="logo-item">
+            <img src="images/Logo-Tikop.png" alt="tikop" />
+          </div>
+          <div class="logo-item">
+            <img src="images/Logo_Yihetang.png" alt="YIHE TANG" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-kidsplaza.png" alt="KidsPlaza" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-dhc.png" alt="DHC" />
+          </div>
+          <div class="logo-item">
+            <img src="images/zalopay-logo.png" alt="HaloPay" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-auragins.png" alt="The Auragins" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-charm-resort.png" alt="CHARM RESORT" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo_nkk.png" alt="NHA KHOA KIM" />
+          </div>
+          <div class="logo-item">
+            <img src="images/Nutricare-logo.png" alt="NUTRICARE" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-decumar.png" alt="DECUMAR" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-baemin.png" alt="BAEMIN" />
+          </div>
+          <div class="logo-item">
+            <img src="images/Gamota-logo.png" alt="GAMOTA" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-maycha.png" alt="MAYCHA" />
+          </div>
+          <div class="logo-item">
+            <img src="images/logo-goto.png" alt="GOTO VN PHARMA" />
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="container-card">
+        <div class="content-box-heading">
+          <h5>
+            <i class="fa-solid fa-circle"></i> VNNET
+            <i class="fa-solid fa-circle"></i>
+          </h5>
+          <h2 id="dichvu">DỊCH VỤ CUNG CẤP</h2>
+          <p>
+            VNNet Agency với hơn 3 năm kinh nghiệm trong lĩnh vực Social Seeding
+            , là đối tác của nhiều thương hiệu lớn tại Việt nam . Cung cấp dịch
+            vụ Seeding chuyên sâu với đội ngũ nhiều năm kinh nghiệm , chuyên
+            nghiệp giúp chiến dịch Seeding mang lại hiệu quả cao.
+          </p>
+        </div>
+        <!--        -->
+        <div class="card-container">
+          <div class="card blue">
+            <h3>Facebook</h3>
+            <p>
+              VNNet cung cấp đầy đủ tất cả các dịch vụ Seeding Facebook chuyên
+              sâu hiệu quả cao.
+            </p>
+            <div class="cover-button">
+              <a href="#baogiafb" class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card green">
+            <h3>Media</h3>
+            <p>
+              VNNet cung cấp đầy đủ tất cả các dịch vụ Seeding Media tăng sự thu
+              hút và gây ấn tượng cho thương hiệu.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://drive.google.com/file/d/1dg1BXlnF0IqAFmlSqrAMGbNUzpF1dYYB/view?usp=sharing"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card black">
+            <h3>TikTok</h3>
+            <p>
+              Dịch vụ Seeding TikTok tổng thể giúp tăng uy tín giúp tăng tỉ lệ
+              chuyển đổi hiệu quả.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://drive.google.com/file/d/1t5CRuxEzI1XMoKNzXKLH3S4E8L5ByR08/view?usp=sharing"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card red">
+            <h3>Youtube</h3>
+            <p>
+              Giải pháp giúp tăng uy tín & hỗ trợ SEO cho video youtube, đồng
+              thời điều hướng dư luận.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Zot-1w-q_t2E4i5e6PNLFOnMSHt96amfhadMeZ7pzFM/edit?gid=713148032#gid=713148032"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card purple">
+            <h3>Instagram</h3>
+            <p>
+              Dịch vụ Seeding Instagram giúp tăng uy tín và tương tác một cách
+              tự nhiên và hiệu quả.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Zot-1w-q_t2E4i5e6PNLFOnMSHt96amfhadMeZ7pzFM/edit?gid=660458028#gid=660458028"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card cyan">
+            <h3>Twitter</h3>
+            <p>
+              Dịch vụ Seeding Twitter giúp tăng uy tín và tương tác trên nền
+              tảng Twitter một cách hiệu quả.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Zot-1w-q_t2E4i5e6PNLFOnMSHt96amfhadMeZ7pzFM/edit?gid=330398839#gid=330398839"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card orange">
+            <h3>Shopee</h3>
+            <p>
+              Dịch vụ Seeding Shopee giúp tăng uy tín và đánh giá sản phẩm trên
+              nền tảng Shopee.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Zot-1w-q_t2E4i5e6PNLFOnMSHt96amfhadMeZ7pzFM/edit?gid=1652794608#gid=1652794608"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card traffic">
+            <h3>Traffic web</h3>
+            <p>
+              Dịch vụ Seeding traffic là bước đầu để xây dựng một cộng đồng
+              trung thành với trang web của bạn.
+            </p>
+            <div class="cover-button">
+              <a
+                href="https://drive.google.com/file/d/1HrKdhlExhBmu8M2q7Z0iIK8ORNhA2z0H/view?usp=sharing"
+                target="_blank"
+                class="button"
+                >Chi tiết
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Next-->
+      <div>
+        <!--Bao gia chi tiet-->
+        <div class="container-card" id="baogiafb">
+          <div class="content-box-heading">
+            <h5>
+              <i class="fa-solid fa-circle"></i> VNNET
+              <i class="fa-solid fa-circle"></i>
+            </h5>
+            <h2>BÁO GIÁ CHI TIẾT DỊCH VỤ FACEBOOK</h2>
+            <p>
+              VNNet Agency với hơn 3 năm kinh nghiệm trong lĩnh vực Social
+              Seeding , là đối tác của nhiều thương hiệu lớn tại Việt nam . Cung
+              cấp dịch vụ Seeding chuyên sâu với đội ngũ nhiều năm kinh nghiệm ,
+              chuyên nghiệp giúp chiến dịch Seeding mang lại hiệu quả cao.
+            </p>
+          </div>
+          <div class="card-container seeding-facebook" id="seeding-facebook">
+            <div class="card blue">
+              <h3>Build nick</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1cHoxYM-cTthxJeDqvuTsxyAfWqCep3Qo/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Trải nghiệm level 1</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/18ocpGxrRgpDEUEngBeG29e2rdxyY0cSO/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Trải nghiệm level 2</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1sQ3tOAFy34FNWFULbAL2Vx9-YHOoDlCI/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Gói 3 tháng</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/14F1GRUzeGKD7J61M4jmyYJwdQ_oayPEM/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Gói 6 tháng</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1PFblXjIaN5aSCNfmwLDZBVhvzm2K0Gud/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Gói 9 tháng</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1DAMU_OWWm61mXvaf0zoQITPDO4AFl2eY/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Chuyển đổi 1</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1jkIP-_V7wY9ln4FutUCp7VMrwMnllzMz/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Chuyển đổi 2</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/1Q9N2affiL-SgwphsMVFBluSK5VIRR-rh/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Nhận diện thương hiệu và chuyển đổi</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/18rFm3l7VhhDW6dYNRR28E4B9EH_vWN_H/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card blue">
+              <h3>Dịch vụ seeding Facebook</h3>
+              <p></p>
+              <div class="cover-button">
+                <a
+                  href="https://drive.google.com/file/d/18k6U3WrLV2Kdhfs4qtH89iekI697HytR/view?usp=drive_link"
+                  target="_blank"
+                  class="button"
+                  >Chi tiết
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 1.5a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 7H1a1 1 0 010-2h11.586L10.293 2.914a1 1 0 010-1.414z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Bao gia chi tiet-->
+      </div>
+      <!-- Part 4 -->
+      <div class="part4">
+        <div class="container">
+          <div class="progress-item">
+            <div class="progress-circle" data-progress="90">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" style="stop-color: #ff4136" />
+                    <stop offset="100%" style="stop-color: #ff851b" />
+                  </linearGradient>
+                </defs>
+                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">90%</div>
+            </div>
+            <p><strong>Khách hàng hài lòng</strong></p>
+          </div>
+          <div class="progress-item">
+            <div class="progress-circle" data-progress="80">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">80%</div>
+            </div>
+            <p><strong>Kí hợp đồng dài hạn</strong></p>
+          </div>
+          <div class="progress-item">
+            <div class="progress-circle" data-progress="95">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">95%</div>
+            </div>
+            <p><strong>Đội ngũ kinh nghiệm</strong></p>
+          </div>
+          <div class="progress-item">
+            <div class="progress-circle" data-progress="85">
+              <svg viewBox="0 0 120 120">
+                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                <circle class="progress" cx="60" cy="60" r="54"></circle>
+              </svg>
+              <div class="progress-text">85%</div>
+            </div>
+            <p><strong>Account chất lượng</strong></p>
+          </div>
+        </div>
+        <!--  Form -->
+        <div class="background-contact-form">
+          <form id="contact-form" class="contact-form" method="post">
+            <h2>Tư vấn cho tôi!</h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="Tên"
+              class="input-field"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input-field"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Số điện thoại"
+              class="input-field"
+              required
+            />
+            <button type="submit" class="submit-button consult-button">
+              Gửi ngay
+            </button>
+          </form>
+        </div>
+        <!-- End Form -->
+      </div>
+      <!-- End Part 4 -->
+      <!-- Part 5 -->
+      <div class="container part5">
+        <div class="image-container">
+          <img
+            src="images/bg-part5.png"
+            alt="Seeding Image"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+        <div class="content-container">
+          <h5>
+            <i class="fa-solid fa-circle"></i> VNNET
+            <i class="fa-solid fa-circle"></i>
+          </h5>
+          <h1>Ngành nào nên Seeding</h1>
+          <p>
+            Seeding là làm khách hàng tin tưởng sản phẩm và đưa ra quyết định
+            mua hàng. Vì vậy, ngành nào khách hàng cần xem đánh giá từ người
+            khác, suy nghĩ càng lâu thì làm Seeding càng hiệu quả
+          </p>
+          <div class="progress-container">
+            <div class="progress-label">Mỹ phẩm & Thực phẩm chức năng</div>
+            <div class="progress-bar">
+              <span data-progress="100%" style="width: 100%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Ngành Mẹ & Bé</div>
+            <div class="progress-bar">
+              <span data-progress="95%" style="width: 95%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Ngành F&B</div>
+            <div class="progress-bar">
+              <span data-progress="97%" style="width: 97%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Spa - Thẩm mỹ</div>
+            <div class="progress-bar">
+              <span data-progress="90%" style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Giáo dục & Đào tạo</div>
+            <div class="progress-bar">
+              <span data-progress="85%" style="width: 85%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Giải pháp công nghệ</div>
+            <div class="progress-bar">
+              <span data-progress="90%" style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-label">Du lịch (Hotel / KDL / Resort)</div>
+            <div class="progress-bar">
+              <span data-progress="80%" style="width: 80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Part 5 -->
+      <!-- Part 6 -->
+      <!-- Feedback -->
+      <div class="feedback">
+        <div class="container-feedback">
+          <div class="header-feedback">
+            <h5>
+              <i class="fa-solid fa-circle"></i> VNNET
+              <i class="fa-solid fa-circle"></i>
+            </h5>
+            <h1>Khách hàng nói về VNNET</h1>
+            <div class="feedback-navigation">
+              <button class="prev-btn">&#8249;</button>
+              <button class="next-btn">&#8250;</button>
+            </div>
+          </div>
+          <div class="container-content-feedback">
+            <div class="content-box-feedback">
+              <div class="content-feedback">
+                <img src="images/fb-jera.png" alt="Customer Avatar Jera" />
+                <p>
+                  "Tôi đánh giá cao về sự hỗ trợ của Vua Seeding, từ khi áp dụng
+                  Seeding lượng khách hàng tăng đáng kể."
+                </p>
+                <h4>Nguyễn Văn A</h4>
+                <span>CEO - VinFast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Part 6-->
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="favicon.ico" alt="VNNet Logo" />
+            <h2>VNNET</h2>
+          </div>
+          <p>
+            Nếu khách hàng không tin vào sản phẩm của bạn hãy để VNNet giúp bạn
+            tăng uy tín cho sản phẩm / thương hiệu của bạn
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Liên hệ</h3>
+          <p>Email: vnnet.agency@gmail.com</p>
+          <p>Phone: 0986 305 704</p>
+          <p>
+            Địa chỉ: 258/2 Hồ Học Lãm, Phường An Lạc, Quận Bình Tân, TP.Hồ Chí
+            Minh
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Dịch vụ</h3>
+          <ul>
+            <li>Seeding Facebook</li>
+            <li>Seeding Media</li>
+            <li>Seeding TikTok</li>
+            <li>Seeding Youtube</li>
+            <li>Quản trị nội dung Fanpage</li>
+            <li>Booking review sản phẩm</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=61560688135864&mibextid=ZbWKwL"
+              target="_blank"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@vnnet.agency?_t=8p4zhLFzfz3&_r=1"
+              title="Tiktok"
+              target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright © 2024 by VNNET</div>
+    </footer>
+    <script src="../src/index.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- EmailJS -->
+    <script>
+      (function () {
+        emailjs.init("QVuzXQvKVU5K8J2c3");
+      })();
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          emailjs.sendForm("service_2h16h0s", "template_yraohzx", this).then(
+            function (result) {
+              console.log(result.text);
+              alert("Cảm ơn bạn đã liên hệ, chúng tôi sẽ phản hồi sớm nhất.");
+            },
+            function (error) {
+              console.log(error.text);
+              alert(
+                "Đã có lỗi xảy ra, vui lòng thử lại hoặc liên hệ số điện thoại cuối trang."
+              );
+            }
+          );
+        });
+    </script>
+    <!-- Header -->
+    <script>
+      let lastScrollPosition = 0;
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ensure the DOM is fully loaded
+        const header = document.getElementById("header");
+
+        if (header) {
+          // Check if the header element exists
+          window.addEventListener("scroll", function () {
+            const currentScrollPosition = window.pageYOffset;
+
+            if (currentScrollPosition > lastScrollPosition) {
+              // Scroll down, hide the header
+              header.style.transform = "translateY(-100%)";
+            } else {
+              // Scroll up, show the header
+              header.style.transform = "translateY(0)";
+            }
+
+            lastScrollPosition = currentScrollPosition;
+          });
+        } else {
+          console.error('The element with ID "header" was not found.');
+        }
+
+        // New code for progress circles
+        const circles = document.querySelectorAll(".progress-circle");
+        circles.forEach((circle) => {
+          const progress = circle.dataset.progress;
+          const progressCircle = circle.querySelector(".progress");
+          const circumference = 2 * Math.PI * 54;
+          const offset = circumference - (progress / 100) * circumference;
+          progressCircle.style.strokeDashoffset = offset;
+        });
+      });
+    </script>
+    <!-- Feedback -->
+    <script>
+      const feedbacks = [
+        {
+          text: "Tôi đánh giá cao về sự hỗ trợ của VNNET, từ khi áp dụng Seeding lượng khách hàng tăng đáng kể.",
+          name: "Trần Ngọc Quỳnh Anh",
+          title: "Trưởng phòng kinh doanh - Jera",
+          img: "images/fb-jera.png",
+        },
+        {
+          text: "Dịch vụ của VNNET rất tuyệt vời, tôi rất hài lòng!",
+          name: "Nguyễn Khánh Huyền",
+          title: "CEO - Huyền Beauty",
+          img: "images/fb-huyenbeauty.png",
+        },
+        {
+          text: "Dịch vụ của VNNET rất tuyệt vời, tôi rất hài lòng!",
+          name: "Trịnh Quốc  Khánh",
+          title: "CTO - QK Technology",
+          img: "images/fb-tech.png",
+        },
+      ];
+
+      let currentFeedback = 0;
+
+      document.querySelector(".prev-btn").addEventListener("click", () => {
+        currentFeedback =
+          currentFeedback > 0 ? currentFeedback - 1 : feedbacks.length - 1;
+        updateFeedback();
+      });
+
+      document.querySelector(".next-btn").addEventListener("click", () => {
+        currentFeedback =
+          currentFeedback < feedbacks.length - 1 ? currentFeedback + 1 : 0;
+        updateFeedback();
+      });
+
+      function updateFeedback() {
+        const feedback = feedbacks[currentFeedback];
+        document.querySelector(".content-feedback img").src = feedback.img;
+        document.querySelector(".content-feedback p").textContent =
+          feedback.text;
+        document.querySelector(".content-feedback h4").textContent =
+          feedback.name;
+        document.querySelector(".content-feedback span").textContent =
+          feedback.title;
+      }
+
+      setInterval(() => {
+        currentFeedback =
+          currentFeedback < feedbacks.length - 1 ? currentFeedback + 1 : 0;
+        updateFeedback();
+      }, 6000);
+
+      updateFeedback();
+      //End Feedback//
+    </script>
+    <!-- Rolling effect -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <!--menu mobile -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileToggle = document.querySelector(".mobile-toggle");
+        const innerMenu2 = document.querySelector(".inner-menu2");
+        const barsIcon = mobileToggle.querySelector(".fa-bars");
+        const xmarkIcon = mobileToggle.querySelector(".fa-xmark");
+
+        // Initially hide the menu and xmark icon
+        innerMenu2.style.display = "none";
+        xmarkIcon.style.display = "none";
+
+        mobileToggle.addEventListener("click", function () {
+          if (innerMenu2.style.display === "flex") {
+            innerMenu2.style.display = "none"; // Hide menu
+            barsIcon.style.display = "block"; // Show bars icon
+            xmarkIcon.style.display = "none"; // Hide xmark icon
+          } else {
+            innerMenu2.style.display = "flex"; // Show menu
+            barsIcon.style.display = "none"; // Hide bars icon
+            xmarkIcon.style.display = "block"; // Show xmark icon
+          }
+        });
+
+        // Close menu when clicking inside inner-menu2
+        innerMenu2.addEventListener("click", function () {
+          innerMenu2.style.display = "none"; // Hide menu
+          barsIcon.style.display = "block"; // Show bars icon
+          xmarkIcon.style.display = "none"; // Hide xmark icon
+        });
+      });
+    </script>
+  </body>
+</html>
