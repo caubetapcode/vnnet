@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/vnnet/static/js/main.7cc68863.js",
+    "static/js/453.0361875a.chunk.js": "/vnnet/static/js/453.0361875a.chunk.js",
+    "index.html": "/vnnet/index.html",
+    "main.7cc68863.js.map": "/vnnet/static/js/main.7cc68863.js.map",
+    "453.0361875a.chunk.js.map": "/vnnet/static/js/453.0361875a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7cc68863.js"
+  ]
+}
