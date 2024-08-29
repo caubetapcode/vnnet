@@ -243,7 +243,7 @@ ul li a:hover::before {
 }
 /* Part 1 */
 .part1 {
-  background-image: url("../public/images/part1-bg2-banner-h8.png");
+  background-image: url("images/part1-bg2-banner-h8.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
@@ -256,10 +256,10 @@ ul li a:hover::before {
   display: flex;
   width: 100%;
   margin: auto;
-  background-image: url("../public/images/part1-bg1-banner.png");
+  background-image: url("images/part1-bg1-banner.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 120px 0 100px 0;
+  padding: 160px 0 100px 0;
 }
 
 .image-part1 {
@@ -272,7 +272,7 @@ ul li a:hover::before {
 .image-part1 img {
   max-width: 100%;
   height: auto;
-  margin-top: -50px;
+  margin-top: 10px;
 }
 
 .content-part1-1 {
@@ -281,7 +281,7 @@ ul li a:hover::before {
   flex-direction: column;
   justify-content: top center;
   color: #363535;
-  margin-top: -30px;
+  margin: 0px 0 0 30px;
 }
 
 .content-part1-1 h6 {
@@ -348,7 +348,7 @@ ul li a:hover::before {
 .part2 {
   width: 100%;
   background-color: #f0f6ff;
-  padding: 100px 0;
+  padding: 200px 0 100px;
 }
 /* Section Part 2 */
 .section-part2 {
@@ -504,7 +504,7 @@ h5 {
 .container-part3 {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px 20px 50px;
   width: 100vw;
   overflow: hidden;
   box-sizing: border-box;
@@ -538,6 +538,15 @@ h5 {
   transform: scale(1.1); /* Enlarge image on hover */
 }
 
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Display 2 logos in a row on mobile */
+  }
+}
+
 /* Card */
 .card-container {
   display: flex;
@@ -546,6 +555,7 @@ h5 {
   width: 98.5%;
   padding: 20px;
   justify-content: center;
+  margin: 0px 0 50px;
 }
 
 .card {
@@ -729,7 +739,7 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../public/images/rocket2-service2-1.png");
+  background-image: url("images/rocket2-service2-1.png");
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -959,7 +969,7 @@ h5 {
   height: 200px;
 }
 .content-feedback p {
-  font-size: 26px;
+  font-size: 22px;
   margin: 20px 0;
 }
 .content-feedback h4 {
